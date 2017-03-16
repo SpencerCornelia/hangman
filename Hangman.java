@@ -107,7 +107,7 @@ public class Hangman extends ConsoleProgram {
 				currentWord += "- ";
 			}
 		}
-		return guessedLetters;
+		return currentWord;
 	} 
 	
 	private char getLetterFromUser() {
