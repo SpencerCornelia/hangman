@@ -77,7 +77,8 @@ public class Hangman extends ConsoleProgram {
 	 ***********************************************************/
 	
 	public void run() {
-		theWord = getRandomWord();
+		theWord = "abcdef";
+		// theWord = getRandomWord();
 		createWord(theWord);
 		playGame(theWord);
 	}
