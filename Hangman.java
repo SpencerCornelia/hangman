@@ -101,6 +101,7 @@ public class Hangman extends ConsoleProgram {
 		if (!Character.isLetter(letter)) {
 			println("Please enter only a letter");
 		}
+		Character.toUpperCase(letter);
 		numberOfGuesses ++;
 		return letter;
 	}
@@ -111,7 +112,7 @@ public class Hangman extends ConsoleProgram {
 				println("You have already guessed that letter.");
 				guessesRemaining ++;
 			} else if (letter == incorrectGuesses.charAt(i)) {
-				
+				guessesRemaining --;
 			}
 		}
 	}
