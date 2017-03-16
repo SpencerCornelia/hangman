@@ -132,7 +132,12 @@ public class Hangman extends ConsoleProgram {
 				correctGuesses += upperLetter;
 			}
 		}
-		return false;
+		if (theWord.indexOf(upperLetter) == -1) {
+			return false;
+		} else {
+			return true;
+		}
+		
 	}
 	
 	/**
