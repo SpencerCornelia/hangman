@@ -98,10 +98,15 @@ public class Hangman extends ConsoleProgram {
 		}
 	}
 	
-	private String createWord(String word) {
-		for (int i = 0; i < word.length(); i++) {
-			currentWord += "- ";
+	private String createWord(String theWord) {
+		for (int i = 0; i < theWord.length(); i++) {
+			if (Character.isLetter(guessedLetters[i])) {
+				currentWord += guessedLetters[i];
+			} else {
+				currentWord += "- ";
+			}
 		}
+		return currentWord;
 	} 
 	
 	private char getLetterFromUser() {
