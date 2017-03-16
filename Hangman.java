@@ -62,6 +62,7 @@ public class Hangman extends ConsoleProgram {
 	
 	public void run() {
 		theWord = getRandomWord();
+		createWord(theWord);
 		playGame(theWord);
 	}
 	
@@ -69,6 +70,12 @@ public class Hangman extends ConsoleProgram {
 		println("Welcome to Hangman");
 		println("Your word now looks like this: " + currentWord);
 	}
+	
+	private void createWord(String word) {
+		for (int i = 0; i < word.length(); i++) {
+			currentWord[i] = "-";
+		}
+	} 
 	
 	/**
 	 * Method: Get Random Word
