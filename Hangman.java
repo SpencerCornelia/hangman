@@ -96,7 +96,6 @@ public class Hangman extends ConsoleProgram {
 		if (!Character.isLetter(letter)) {
 			println("Please enter only a letter");
 		}
-		println(letter);
 	}
 	
 	/**
