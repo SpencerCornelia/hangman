@@ -125,7 +125,7 @@ public class Hangman extends ConsoleProgram {
 	private void checkLetter(char upperLetter) {
 		for (int i = 0; i < theWord.length(); i++) {
 			if (upperLetter == theWord.charAt(i)) {
-				currentWord.setCharAt(i) = theWord.charAt(i);
+				guessedLetters[i] = theWord.charAt(i);
 			}
 		}
 	}
