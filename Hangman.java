@@ -47,7 +47,7 @@ public class Hangman extends ConsoleProgram {
 	/* stores string of letters incorrectly guessed */
 	private String incorrectGuesses = "";
 	/* this will be used for displaying the word with dashes */
-	private String currentWord = "- s - c";
+	private String currentWord = "";
 	/* use this for setting guessed letters from user */
 	private char[] guessedLetters = currentWord.toCharArray();
 	/* will help with counter to determine how many guesses user has left */
@@ -102,7 +102,7 @@ public class Hangman extends ConsoleProgram {
 		for (char c : guessedLetters) {
 			if (Character.isLetter(c)) {
 				//Character.isLetter(guessedLetters[i])
-				println("made it here " + c);
+				guessedLetters[c] = c;
 			} else {
 				currentWord += "- ";
 			}
