@@ -58,6 +58,7 @@ public class Hangman extends ConsoleProgram {
 	
 	private GCanvas canvas = new GCanvas();
 	
+	
 	/***********************************************************
 	 *                    Methods                              *
 	 ***********************************************************/
@@ -73,6 +74,7 @@ public class Hangman extends ConsoleProgram {
 		while (guessesRemaining > 0) {
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
+			getLetterFromUser();
 			guessesRemaining --;
 		}
 	}
@@ -82,6 +84,10 @@ public class Hangman extends ConsoleProgram {
 			currentWord += "- ";
 		}
 	} 
+	
+	private void getLetterFromUser() {
+		
+	}
 	
 	/**
 	 * Method: Get Random Word
