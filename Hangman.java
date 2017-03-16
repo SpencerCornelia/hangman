@@ -50,6 +50,8 @@ public class Hangman extends ConsoleProgram {
 	private int guessesRemaining = N_GUESSES;
 	/* letter that user inputs into console */
 	private char letter;
+	/* keep a counter to help with checking if user has previously guessed letter */
+	private int numberOfGuesses = 0;
 	
 	
 	/***********************************************************
