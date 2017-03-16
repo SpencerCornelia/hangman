@@ -39,6 +39,14 @@ public class Hangman extends ConsoleProgram {
 	private static final String PARTIALLY_GUESSED_FONT = "Courier-36";
 	private static final String INCORRECT_GUESSES_FONT = "Courier-26";
 	
+	/* The word returned from getRandomWord which will serve as main word in game */
+	private String theWord;
+	/* this will store the correct guesses by user */
+	private String correctGuesses = "";
+	/* this will store the incorrect guesses by user */
+	private String incorrectGuesses = "";
+	
+	
 	/***********************************************************
 	 *              Instance Variables                         *
 	 ***********************************************************/
@@ -53,11 +61,12 @@ public class Hangman extends ConsoleProgram {
 	 ***********************************************************/
 	
 	public void run() {
-		
+		theWord = getRandomWord();
+		playGame(theWord);
 	}
 	
-	private void playGame() {
-		private string theWord = getRandomWord();
+	private void playGame(String word) {
+		
 	}
 	
 	/**
