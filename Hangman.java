@@ -100,7 +100,8 @@ public class Hangman extends ConsoleProgram {
 	
 	private String createWord(String theWord) {
 		for (int i = 0; i < theWord.length(); i++) {
-			if () {
+			if (true) {
+				//Character.isLetter(guessedLetters[i])
 				
 			} else {
 				currentWord += "- ";
