@@ -44,6 +44,8 @@ public class Hangman extends ConsoleProgram {
 	private String theWord;
 	/* this will store the correct guesses by user */
 	private String correctGuesses = "";
+	/* stores string of letters incorrectly guessed */
+	private String incorrectGuesses = "";
 	/* this will be used for displaying the word with dashes */
 	private String currentWord = "";
 	/* will help with counter to determine how many guesses user has left */
@@ -107,6 +109,9 @@ public class Hangman extends ConsoleProgram {
 		for (int i = 0; i <= numberOfGuesses; i++) {
 			if (letter == correctGuesses.charAt(i)) {
 				println("You have already guessed that letter.");
+				guessesRemaining ++;
+			} else if (letter == incorrectGuesses.charAt(i)) {
+				
 			}
 		}
 	}
