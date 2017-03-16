@@ -89,8 +89,11 @@ public class Hangman extends ConsoleProgram {
 			println("You now have " + guessesRemaining + " guesses left");
 			getLetterFromUser();
 			hasLetterBeenGuessed(upperLetter);
-			checkLetter(upperLetter);
-			guessesRemaining --;
+			if (checkLetter(upperLetter)) {
+				// do something
+			} else {
+				guessesRemaining --;
+			}
 		}
 	}
 	
@@ -122,12 +125,14 @@ public class Hangman extends ConsoleProgram {
 		}
 	}
 	
-	private void checkLetter(char upperLetter) {
+	private boolean checkLetter(char upperLetter) {
 		for (int i = 0; i < theWord.length(); i++) {
 			if (upperLetter == theWord.charAt(i)) {
 				guessedLetters[i] = theWord.charAt(i);
+				return true;
 			}
 		}
+		return false;
 	}
 	
 	/**
