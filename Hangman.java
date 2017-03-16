@@ -137,7 +137,6 @@ public class Hangman extends ConsoleProgram {
 		} else {
 			return true;
 		}
-		
 	}
 	
 	/**
