@@ -45,6 +45,8 @@ public class Hangman extends ConsoleProgram {
 	private String correctGuesses = "";
 	/* this will be used for displaying the word with dashes */
 	private String currentWord = "";
+	/* will help with counter */
+	private int guessesRemaining = N_GUESSES;
 	
 	
 	/***********************************************************
