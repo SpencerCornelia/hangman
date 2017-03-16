@@ -53,7 +53,11 @@ public class Hangman extends ConsoleProgram {
 	 ***********************************************************/
 	
 	public void run() {
-		println(getRandomWord());
+		
+	}
+	
+	private void playGame() {
+		private string theWord = getRandomWord();
 	}
 	
 	/**
