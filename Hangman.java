@@ -102,7 +102,7 @@ public class Hangman extends ConsoleProgram {
 		for (char c : guessedLetters) {
 			if (Character.isLetter(c)) {
 				//Character.isLetter(guessedLetters[i])
-				guessedLetters[c] = c;
+				currentWord += c;
 			} else {
 				currentWord += "- ";
 			}
