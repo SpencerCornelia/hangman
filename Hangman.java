@@ -80,7 +80,8 @@ public class Hangman extends ConsoleProgram {
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
 			getLetterFromUser();
-			hasLetterBeenGuessed();
+			println(letter);
+			hasLetterBeenGuessed(letter);
 			guessesRemaining --;
 		}
 	}
@@ -98,6 +99,10 @@ public class Hangman extends ConsoleProgram {
 			println("Please enter only a letter");
 		}
 		return letter;
+	}
+	
+	private void hasLetterBeenGuessed(char letter) {
+		
 	}
 	
 	/**
