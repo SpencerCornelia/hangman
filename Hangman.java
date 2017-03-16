@@ -49,7 +49,7 @@ public class Hangman extends ConsoleProgram {
 	/* will help with counter to determine how many guesses user has left */
 	private int guessesRemaining = N_GUESSES;
 	/* letter that user inputs into console */
-	private String letter;
+	private char letter;
 	
 	
 	/***********************************************************
@@ -92,8 +92,10 @@ public class Hangman extends ConsoleProgram {
 	
 	private void getLetterFromUser() {
 		System.out.println("Please enter a letter: ");
-		letter = input.next();
-		println("letter = " + letter);
+		letter = input.next().charAt(0);
+		if (!Character.isLetter(letter)) {
+			println("Please enter only a letter");
+		}
 	}
 	
 	/**
