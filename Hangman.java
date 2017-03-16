@@ -43,7 +43,8 @@ public class Hangman extends ConsoleProgram {
 	private String theWord;
 	/* this will store the correct guesses by user */
 	private String correctGuesses = "";
-	
+	/* this will be used for displaying the word with dashes */
+	private String currentWord = "";
 	
 	
 	/***********************************************************
@@ -66,7 +67,7 @@ public class Hangman extends ConsoleProgram {
 	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
-		println("Your word now looks like this: ");
+		println("Your word now looks like this: " + currentWord);
 	}
 	
 	/**
