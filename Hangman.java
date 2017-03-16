@@ -59,6 +59,8 @@ public class Hangman extends ConsoleProgram {
 	
 	private GCanvas canvas = new GCanvas();
 	
+	Scanner input = new Scanner(System.in);
+	
 	
 	/***********************************************************
 	 *                    Methods                              *
