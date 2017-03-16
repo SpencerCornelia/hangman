@@ -104,7 +104,9 @@ public class Hangman extends ConsoleProgram {
 		// need to run for loop for length of theWord
 		for (int i = 0; i <= theWord.length(); i++) {
 			if (Character.isLetter(guessedLetters[i])) {
-				println("made it here");
+				currentWord += guessedLetters[i];
+			} else { 
+				currentWord += " - ";
 			}
 		}
 		return currentWord;
