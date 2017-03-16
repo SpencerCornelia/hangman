@@ -48,6 +48,8 @@ public class Hangman extends ConsoleProgram {
 	private String currentWord = "";
 	/* will help with counter to determine how many guesses user has left */
 	private int guessesRemaining = N_GUESSES;
+	/* letter that user inputs into console */
+	private String letter;
 	
 	
 	/***********************************************************
@@ -89,6 +91,7 @@ public class Hangman extends ConsoleProgram {
 	} 
 	
 	private void getLetterFromUser() {
+		System.out.println("Please enter a letter: ");
 		
 	}
 	
