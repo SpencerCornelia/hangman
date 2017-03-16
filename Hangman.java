@@ -45,7 +45,7 @@ public class Hangman extends ConsoleProgram {
 	private String correctGuesses = "";
 	/* this will be used for displaying the word with dashes */
 	private String currentWord = "";
-	/* will help with counter */
+	/* will help with counter to determine how many guesses user has left */
 	private int guessesRemaining = N_GUESSES;
 	
 	
@@ -70,7 +70,9 @@ public class Hangman extends ConsoleProgram {
 	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
-		println("Your word now looks like this: " + currentWord);
+		while (guessesRemaining > 0) {
+			println("Your word now looks like this: " + currentWord);
+		}
 	}
 	
 	private void createWord(String word) {
