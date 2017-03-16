@@ -101,7 +101,11 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void hasLetterBeenGuessed(char letter) {
-		
+		for (int i = 0; i < correctGuesses.length(); i++) {
+			if (letter == correctGuesses.charAt(i)) {
+				
+			}
+		}
 	}
 	
 	/**
