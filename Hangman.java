@@ -99,10 +99,10 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private String createWord(String theWord) {
-		for (int i = 0; i < theWord.length(); i++) {
-			if () {
+		for (char c : guessedLetters) {
+			if (Character.isLetter(c)) {
 				//Character.isLetter(guessedLetters[i])
-				
+				println("made it here");
 			} else {
 				currentWord += "- ";
 			}
