@@ -104,7 +104,7 @@ public class Hangman extends ConsoleProgram {
 				//Character.isLetter(guessedLetters[i])
 				currentWord += c;
 			} else {
-				currentWord += "- ";
+				currentWord += " - ";
 			}
 		}
 		return currentWord;
