@@ -43,8 +43,8 @@ public class Hangman extends ConsoleProgram {
 	private String theWord;
 	/* this will store the correct guesses by user */
 	private String correctGuesses = "";
-	/* this will store the incorrect guesses by user */
-	private String incorrectGuesses = "";
+	/*  */
+	private String previusGuess = "";
 	
 	
 	/***********************************************************
@@ -66,7 +66,11 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void playGame(String word) {
-		
+		println("Welcome to Hangman");
+		println("Your word now looks like this: ");
+		print("-------");
+		println("You have " + N_GUESSES + " left.");
+		println("Your guess: ");
 	}
 	
 	/**
