@@ -66,9 +66,7 @@ public class Hangman extends ConsoleProgram {
 	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
-		println("Your word now looks like this: -------");
-		println("You have " + N_GUESSES + " guesses left.");
-		readln("Your guess: ");
+		println("Your word now looks like this: ");
 	}
 	
 	/**
