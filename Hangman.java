@@ -48,6 +48,8 @@ public class Hangman extends ConsoleProgram {
 	private String incorrectGuesses = "";
 	/* this will be used for displaying the word with dashes */
 	private String currentWord = "";
+	/* use this for setting guessed letters from user */
+	private char[] guessedLetters = currentWord.toCharArray();
 	/* will help with counter to determine how many guesses user has left */
 	private int guessesRemaining = N_GUESSES;
 	/* letter that user inputs into console */
@@ -121,7 +123,11 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void checkLetter(char upperLetter) {
-		
+		for (int i = 0; i < theWord.length(); i++) {
+			if (upperLetter == theWord.charAt(i)) {
+				currentWord.setCharAt(i) = theWord.charAt(i);
+			}
+		}
 	}
 	
 	/**
