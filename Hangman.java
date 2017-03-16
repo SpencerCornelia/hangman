@@ -92,7 +92,7 @@ public class Hangman extends ConsoleProgram {
 	
 	private void getLetterFromUser() {
 		System.out.println("Please enter a letter: ");
-		
+		letter = input.next();
 	}
 	
 	/**
