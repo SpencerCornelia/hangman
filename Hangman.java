@@ -52,6 +52,8 @@ public class Hangman extends ConsoleProgram {
 	private int guessesRemaining = N_GUESSES;
 	/* letter that user inputs into console */
 	private char letter;
+	/* use this to convert user input char to upper case */
+	private char upperLetter;
 	/* keep a counter to help with checking if user has previously guessed letter */
 	private int numberOfGuesses = 0;
 	
@@ -101,7 +103,7 @@ public class Hangman extends ConsoleProgram {
 		if (!Character.isLetter(letter)) {
 			println("Please enter only a letter");
 		}
-		char upperLetter = Character.toUpperCase(letter);
+		upperLetter = Character.toUpperCase(letter);
 		numberOfGuesses ++;
 		return upperLetter;
 	}
