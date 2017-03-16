@@ -110,10 +110,10 @@ public class Hangman extends ConsoleProgram {
 	
 	private void hasLetterBeenGuessed(char upperLetter) {
 		for (int i = 0; i <= numberOfGuesses; i++) {
-			if (letter == correctGuesses.charAt(i)) {
+			if (upperLetter == correctGuesses.charAt(i)) {
 				println("You have already guessed that letter.");
 				guessesRemaining ++;
-			} else if (letter == incorrectGuesses.charAt(i)) {
+			} else if (upperLetter == incorrectGuesses.charAt(i)) {
 				guessesRemaining --;
 			}
 		}
