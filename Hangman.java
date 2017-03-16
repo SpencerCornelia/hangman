@@ -64,8 +64,6 @@ public class Hangman extends ConsoleProgram {
 		theWord = getRandomWord();
 		createWord(theWord);
 		playGame(theWord);
-		println("the word = " + theWord);
-		println("current word = " + currentWord);
 	}
 	
 	private void playGame(String word) {
