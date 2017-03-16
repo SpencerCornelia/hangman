@@ -91,8 +91,9 @@ public class Hangman extends ConsoleProgram {
 			getLetterFromUser();
 			// hasLetterBeenGuessed(upperLetter);
 			if (checkLetter(upperLetter)) {
-				// do something
+				println("made it to check letter true");
 			} else {
+				println("made it to check letter false");
 				guessesRemaining --;
 			}
 		}
