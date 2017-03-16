@@ -87,6 +87,7 @@ public class Hangman extends ConsoleProgram {
 			println("You now have " + guessesRemaining + " guesses left");
 			getLetterFromUser();
 			hasLetterBeenGuessed(upperLetter);
+			checkLetter(upperLetter);
 			guessesRemaining --;
 		}
 	}
@@ -117,6 +118,10 @@ public class Hangman extends ConsoleProgram {
 				guessesRemaining --;
 			}
 		}
+	}
+	
+	private void checkLetter(char upperLetter) {
+		
 	}
 	
 	/**
