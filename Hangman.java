@@ -73,6 +73,7 @@ public class Hangman extends ConsoleProgram {
 		while (guessesRemaining > 0) {
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
+			guessesRemaining --;
 		}
 	}
 	
