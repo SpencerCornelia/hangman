@@ -103,8 +103,7 @@ public class Hangman extends ConsoleProgram {
 	private String createWord(String theWord) {
 		// need to run for loop for length of theWord
 		for (int i = 0; i <= theWord.length(); i++) {
-			char c = guessedLetters[i];
-			println(c);
+			
 		}
 		return currentWord;
 	} 
