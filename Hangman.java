@@ -108,7 +108,7 @@ public class Hangman extends ConsoleProgram {
 		return upperLetter;
 	}
 	
-	private void hasLetterBeenGuessed(char letter) {
+	private void hasLetterBeenGuessed(char upperLetter) {
 		for (int i = 0; i <= numberOfGuesses; i++) {
 			if (letter == correctGuesses.charAt(i)) {
 				println("You have already guessed that letter.");
