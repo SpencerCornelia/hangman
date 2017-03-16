@@ -80,6 +80,7 @@ public class Hangman extends ConsoleProgram {
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
 			getLetterFromUser();
+			hasLetterBeenGuessed();
 			guessesRemaining --;
 		}
 	}
@@ -90,12 +91,13 @@ public class Hangman extends ConsoleProgram {
 		}
 	} 
 	
-	private void getLetterFromUser() {
+	private char getLetterFromUser() {
 		System.out.println("Please enter a letter: ");
 		letter = input.next().charAt(0);
 		if (!Character.isLetter(letter)) {
 			println("Please enter only a letter");
 		}
+		return letter;
 	}
 	
 	/**
