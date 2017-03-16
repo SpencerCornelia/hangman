@@ -102,9 +102,8 @@ public class Hangman extends ConsoleProgram {
 			println("Please enter only a letter");
 		}
 		char upperLetter = Character.toUpperCase(letter);
-		println("uppercase letter: " + upperLetter);
 		numberOfGuesses ++;
-		return letter;
+		return upperLetter;
 	}
 	
 	private void hasLetterBeenGuessed(char letter) {
