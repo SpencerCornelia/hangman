@@ -72,7 +72,7 @@ public class Hangman extends ConsoleProgram {
 		println("Welcome to Hangman");
 		while (guessesRemaining > 0) {
 			println("Your word now looks like this: " + currentWord);
-			println("You now have " + guessesRemaining " guesses left");
+			println("You now have " + guessesRemaining + " guesses left");
 		}
 	}
 	
