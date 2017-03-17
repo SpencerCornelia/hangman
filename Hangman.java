@@ -147,8 +147,6 @@ public class Hangman extends ConsoleProgram {
 			if (correctGuesses.indexOf(upperLetter) != -1) {
 				println("You have already guessed that letter.");
 				guessesRemaining ++;
-			} else if (upperLetter == incorrectGuesses.charAt(i)) {
-				guessesRemaining --;
 			}
 		}
 	}
