@@ -120,17 +120,6 @@ public class Hangman extends ConsoleProgram {
 		return upperLetter;
 	}
 	
-	private void hasLetterBeenGuessed(char upperLetter) {
-		for (int i = 0; i <= numberOfGuesses; i++) {
-			if (upperLetter == correctGuesses.charAt(i)) {
-				println("You have already guessed that letter.");
-				guessesRemaining ++;
-			} else if (upperLetter == incorrectGuesses.charAt(i)) {
-				guessesRemaining --;
-			}
-		}
-	}
-	
 	private boolean checkLetter(char upperLetter) {
 		for (int i = 0; i < theWord.length(); i++) {
 			if (upperLetter == theWord.charAt(i)) {
@@ -143,6 +132,17 @@ public class Hangman extends ConsoleProgram {
 			return false;
 		} else {
 			return true;
+		}
+	}
+	
+	private void hasLetterBeenGuessed(char upperLetter) {
+		for (int i = 0; i <= numberOfGuesses; i++) {
+			if (upperLetter == correctGuesses.charAt(i)) {
+				println("You have already guessed that letter.");
+				guessesRemaining ++;
+			} else if (upperLetter == incorrectGuesses.charAt(i)) {
+				guessesRemaining --;
+			}
 		}
 	}
 	
