@@ -87,8 +87,7 @@ public class Hangman extends ConsoleProgram {
 			currentWord = createWord(theWord);
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
-			/* un-comment this when ready to test
-			getLetterFromUser();
+			// getLetterFromUser();
 			// hasLetterBeenGuessed(upperLetter);
 			if (checkLetter(upperLetter)) {
 				println("made it to check letter true");
@@ -96,7 +95,6 @@ public class Hangman extends ConsoleProgram {
 				println("made it to check letter false");
 				guessesRemaining --;
 			}
-			*/
 		}
 	}
 	
