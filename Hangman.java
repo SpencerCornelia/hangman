@@ -116,17 +116,28 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void checkLetter(char upperLetter) {
+		int guess = 0;
 		for (int i = 0; i < theWord.length(); i++) {
 			if (upperLetter == theWord.charAt(i)) {
 				correctGuesses += upperLetter;
 				StringBuilder str = new StringBuilder(currentWord);
 				str.setCharAt(i, upperLetter);
 				currentWord = str.toString();
+				guess = 1;
 			} 
 			if (theWord.indexOf(upperLetter) == -1) {
 				println("The word does not contain the letter " + upperLetter);
 				incorrectGuesses += upperLetter;
+				guess = 0;
 			}
+		}
+		
+		if (guess == 1) {
+			howManyGuesses(true);
+		}
+		
+		if (guess == 0) {
+			howManyGuesses(false);
 		}
 	}
 	
