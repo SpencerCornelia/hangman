@@ -132,6 +132,7 @@ public class Hangman extends ConsoleProgram {
 				}
 			} else {
 				incorrectGuesses += upperLetter;
+				numberOfGuesses ++;
 				guessesRemaining --;
 			}
 		}
