@@ -122,7 +122,8 @@ public class Hangman extends ConsoleProgram {
 				StringBuilder str = new StringBuilder(currentWord);
 				str.setCharAt(i, upperLetter);
 				currentWord = str.toString();
-			} else {
+			} 
+			if (theWord.indexOf(upperLetter) == -1) {
 				incorrectGuesses += upperLetter;
 				guessesRemaining --;
 			}
