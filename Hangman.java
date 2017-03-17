@@ -134,8 +134,7 @@ public class Hangman extends ConsoleProgram {
 			if (upperLetter == theWord.charAt(i)) {
 				if (correctGuesses.indexOf(upperLetter) == -1) {
 					correctGuesses += upperLetter;
-					charArray = currentWord.toCharArray();
-					updatedWord = new String(charArray);
+					
 				}
 			} else {
 				
