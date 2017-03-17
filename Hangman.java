@@ -91,8 +91,9 @@ public class Hangman extends ConsoleProgram {
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
 			if (hasLetterBeenGuessed(upperLetter) == false) {
-				getLetterFromUser();
+				println("You have already guessed that letter.");
 			}
+			getLetterFromUser();
 		}
 	}
 	
@@ -141,7 +142,6 @@ public class Hangman extends ConsoleProgram {
 	
 	private boolean hasLetterBeenGuessed(char upperLetter) {
 		if (correctGuesses.indexOf(upperLetter) != -1) {
-			println("You have already guessed that letter.");
 			return true;
 		}
 		return false;
