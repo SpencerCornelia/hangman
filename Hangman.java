@@ -117,8 +117,6 @@ public class Hangman extends ConsoleProgram {
 	
 	private void checkLetter(char upperLetter) {
 		for (int i = 0; i < theWord.length(); i++) {
-			println("upperletter = " + upperLetter);
-			println("theWord.charAt(i) = " + theWord.charAt(i));
 			if (upperLetter == theWord.charAt(i)) {
 				if (correctGuesses.indexOf(upperLetter) == -1) {
 					correctGuesses += upperLetter;
