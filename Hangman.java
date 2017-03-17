@@ -129,6 +129,17 @@ public class Hangman extends ConsoleProgram {
 			}
 		}
 	}
+	
+	private void howManyGuesses(boolean guess) {
+		if (guess) {
+			guessesRemaining ++;
+		}
+		
+		if (!guess) {
+			guessesRemaining --;
+		}
+	}
+	
 	/*
 	private boolean hasLetterBeenGuessed(char upperLetter) {
 		
