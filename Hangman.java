@@ -60,6 +60,8 @@ public class Hangman extends ConsoleProgram {
 	private char upperLetter;
 	/* keep a counter to help with checking if user has previously guessed letter */
 	private int numberOfGuesses = 0;
+	/* set to 1 when user wins to break out of while loop */
+	private int userWins = 0;
 	
 	
 	/***********************************************************
@@ -91,6 +93,10 @@ public class Hangman extends ConsoleProgram {
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
 			getLetterFromUser();
+			if (userWins == 1) {
+				userWon();
+				break;
+			}
 		}
 	}
 	
