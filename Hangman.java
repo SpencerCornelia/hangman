@@ -102,7 +102,7 @@ public class Hangman extends ConsoleProgram {
 		return currentWord;
 	} 
 	
-	private char getLetterFromUser() {
+	private void getLetterFromUser() {
 		String letter = readLine("Please enter a letter: ");
 		if (letter.length() > 1) {
 			println("Please only input one letter");
@@ -113,7 +113,6 @@ public class Hangman extends ConsoleProgram {
 			upperLetter = Character.toUpperCase(letterToChar);
 			checkLetter(upperLetter);
 			numberOfGuesses ++;
-			return upperLetter;
 		}
 	}
 	
