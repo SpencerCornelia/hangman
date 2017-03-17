@@ -77,12 +77,12 @@ public class Hangman extends ConsoleProgram {
 	public void run() {
 		theWord = "abcdef";
 		// theWord = getRandomWord();
-		createWord(theWord);
 		playGame(theWord);
 	}
 	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
+		createWord(theWord);
 		while (guessesRemaining > 0) {
 			currentWord = createWord(theWord);
 			println("Your word now looks like this: " + currentWord);
@@ -97,10 +97,10 @@ public class Hangman extends ConsoleProgram {
 		}
 	}
 	
-	private String createWord(String theWord) {
+	private String createWord(String theWord, char letter) {
 		// need to run for loop for length of theWord
 		for (int i = 0; i <= theWord.length(); i++) {
-			
+			theWord.indexOf(letter);
 		}
 		return currentWord;
 	} 
