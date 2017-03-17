@@ -138,10 +138,12 @@ public class Hangman extends ConsoleProgram {
 		}
 	}
 	
-	private void hasLetterBeenGuessed(char upperLetter) {
+	private boolean hasLetterBeenGuessed(char upperLetter) {
 		if (correctGuesses.indexOf(upperLetter) != -1) {
 			println("You have already guessed that letter.");
+			return true;
 		}
+		return false;
 	}
 	
 	
