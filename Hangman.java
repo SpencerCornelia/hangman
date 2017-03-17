@@ -91,7 +91,7 @@ public class Hangman extends ConsoleProgram {
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
 			getLetterFromUser();
-			// hasLetterBeenGuessed(upperLetter);
+			hasLetterBeenGuessed(upperLetter);
 		}
 	}
 	
@@ -141,10 +141,10 @@ public class Hangman extends ConsoleProgram {
 			return true;
 		}
 	}
-	/*
+	
 	private void hasLetterBeenGuessed(char upperLetter) {
 		for (int i = 0; i <= numberOfGuesses; i++) {
-			if (correctGuesses.indexOf(upperLetter) != null) {
+			if (correctGuesses.indexOf(upperLetter) != -1) {
 				println("You have already guessed that letter.");
 				guessesRemaining ++;
 			} else if (upperLetter == incorrectGuesses.charAt(i)) {
@@ -152,7 +152,7 @@ public class Hangman extends ConsoleProgram {
 			}
 		}
 	}
-	*/
+	
 	
 	/**
 	 * Method: Get Random Word
