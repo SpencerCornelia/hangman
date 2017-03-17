@@ -92,8 +92,9 @@ public class Hangman extends ConsoleProgram {
 			println("You now have " + guessesRemaining + " guesses left");
 			if (hasLetterBeenGuessed(upperLetter) == true) {
 				println("You have already guessed that letter.");
+			} else {
+				getLetterFromUser();
 			}
-			getLetterFromUser();
 		}
 	}
 	
