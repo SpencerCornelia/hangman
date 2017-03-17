@@ -99,7 +99,8 @@ public class Hangman extends ConsoleProgram {
 	private String createWord(String theWord, char upperLetter) {
 		// need to run for loop for length of theWord
 		for (int i = 0; i <= theWord.length(); i++) {
-			theWord.indexOf(upperLetter);
+			int index = theWord.indexOf(upperLetter);
+			println(index);
 		}
 		return currentWord;
 	} 
