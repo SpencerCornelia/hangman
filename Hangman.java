@@ -138,6 +138,8 @@ public class Hangman extends ConsoleProgram {
 					charArray[i] = upperLetter;
 					updatedWord = new String(charArray);
 				}
+			} else {
+				
 			}
 		}
 		if (theWord.indexOf(upperLetter) == -1) {
