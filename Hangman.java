@@ -136,10 +136,7 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private boolean hasLetterBeenGuessed(char upperLetter) {
-		if (correctGuesses.indexOf(upperLetter) != -1) {
-			return true;
-		}
-		return false;
+		
 	}
 	
 	
