@@ -90,9 +90,8 @@ public class Hangman extends ConsoleProgram {
 			// getLetterFromUser();
 			// hasLetterBeenGuessed(upperLetter);
 			if (checkLetter(upperLetter)) {
-				println("made it to check letter true");
+				//do something
 			} else {
-				println("made it to check letter false");
 				guessesRemaining --;
 			}
 		}
