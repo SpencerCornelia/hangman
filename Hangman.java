@@ -108,7 +108,7 @@ public class Hangman extends ConsoleProgram {
 	} 
 	
 	private char getLetterFromUser() {
-		System.out.println("Please enter a letter: ");
+		readLine("Please enter a letter: ");
 		letter = input.next().charAt(0);
 		if (!Character.isLetter(letter)) {
 			println("Please enter only a letter");
