@@ -94,7 +94,7 @@ public class Hangman extends ConsoleProgram {
 			println("You now have " + guessesRemaining + " guesses left");
 			getLetterFromUser();
 			if (userWins == 1) {
-				userWon();
+				//userWon();
 				break;
 			}
 		}
