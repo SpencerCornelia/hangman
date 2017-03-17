@@ -91,7 +91,7 @@ public class Hangman extends ConsoleProgram {
 			if (guessesRemaining == N_GUESSES) {
 				println("Your word now looks like this: " + currentWord);
 			}
-			if (correctGuesses.length() > 1 || guessesRemaining < N_GUESSES) {
+			if (correctGuesses.length() > 0 || guessesRemaining < N_GUESSES) {
 				println("Your word now looks like this: " + updatedWord);
 			}
 			println("You now have " + guessesRemaining + " guesses left");
