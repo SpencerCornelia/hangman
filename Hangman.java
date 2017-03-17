@@ -112,7 +112,6 @@ public class Hangman extends ConsoleProgram {
 			char letterToChar = letter.charAt(0);
 			upperLetter = Character.toUpperCase(letterToChar);
 			checkLetter(upperLetter);
-			numberOfGuesses ++;
 		}
 	}
 	
