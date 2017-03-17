@@ -82,9 +82,8 @@ public class Hangman extends ConsoleProgram {
 	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
-		createWord(theWord);
 		while (guessesRemaining > 0) {
-			currentWord = createWord(theWord);
+			currentWord = createWord(theWord, upperLetter);
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
 			// getLetterFromUser();
