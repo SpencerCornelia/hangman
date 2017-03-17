@@ -110,7 +110,7 @@ public class Hangman extends ConsoleProgram {
 			println("Please only input one letter");
 		}
 		if (!letter.chars().allMatch(Character::isLetter)) {
-			println("check for bad letters");
+			println("Please only input letters");
 		}
 		char letterToChar = letter.charAt(0);
 		upperLetter = Character.toUpperCase(letterToChar);
