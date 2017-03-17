@@ -126,7 +126,6 @@ public class Hangman extends ConsoleProgram {
 			if (theWord.indexOf(upperLetter) == -1) {
 				println("The word does not contain the letter " + upperLetter);
 				incorrectGuesses += upperLetter;
-				guessesRemaining --;
 			}
 		}
 	}
