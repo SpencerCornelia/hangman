@@ -140,6 +140,10 @@ public class Hangman extends ConsoleProgram {
 		if (guess == 0) {
 			howManyGuesses(false, upperLetter);
 		}
+		
+		if (guess == 1) {
+			hasUserWon();
+		}
 	}
 	
 	private void howManyGuesses(boolean guess, char upperLetter) {
@@ -147,6 +151,10 @@ public class Hangman extends ConsoleProgram {
 			println("The word does not contain the letter " + upperLetter);
 			guessesRemaining --;
 		}
+	}
+	
+	private void hasUserWon() {
+		
 	}
 	
 	/*
