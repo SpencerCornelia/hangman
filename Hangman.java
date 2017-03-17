@@ -118,13 +118,11 @@ public class Hangman extends ConsoleProgram {
 	private void checkLetter(char upperLetter) {
 		for (int i = 0; i < theWord.length(); i++) {
 			if (upperLetter == theWord.charAt(i)) {
-				if (correctGuesses.indexOf(upperLetter) == -1) {
-					correctGuesses += upperLetter;
-					StringBuilder str = new StringBuilder(currentWord);
-					str.setCharAt(i, upperLetter);
-					currentWord = str.toString();
-					numberOfGuesses ++;
-				}
+				correctGuesses += upperLetter;
+				StringBuilder str = new StringBuilder(currentWord);
+				str.setCharAt(i, upperLetter);
+				currentWord = str.toString();
+				numberOfGuesses ++;
 			} else {
 				incorrectGuesses += upperLetter;
 				numberOfGuesses ++;
