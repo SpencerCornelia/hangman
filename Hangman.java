@@ -136,7 +136,7 @@ public class Hangman extends ConsoleProgram {
 					correctGuesses += upperLetter;
 					StringBuilder str = new StringBuilder(currentWord);
 					str.setCharAt(i, upperLetter);
-					updatedWord = str.toString();
+					currentWord = str.toString();
 				}
 			} else {
 				
