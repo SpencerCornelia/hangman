@@ -155,6 +155,7 @@ public class Hangman extends ConsoleProgram {
 	
 	private void hasUserWon() {
 		// if currentWord == theWord, set userWins = to 1
+		// check if two strings are equal -- google this
 	}
 	
 	/*
