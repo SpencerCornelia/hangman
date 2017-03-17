@@ -127,8 +127,9 @@ public class Hangman extends ConsoleProgram {
 			if (upperLetter == theWord.charAt(i)) {
 				if (correctGuesses.indexOf(upperLetter) == -1) {
 					correctGuesses += upperLetter;
-					StringBuilder updatedWord = new StringBuilder(currentWord);
-					currentWord.setCharAt(i, upperLetter); 
+					charArray = currentWord.toCharArray();
+					charArray[i] = upperLetter;
+					updatedWord = new String(charArray);
 				}
 			}
 		}
