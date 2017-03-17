@@ -108,7 +108,11 @@ public class Hangman extends ConsoleProgram {
 	} 
 	
 	private char getLetterFromUser() {
-		readLine("Please enter a letter: ");
+		/*
+		 * try this when I get here
+		 * String letter = readLine("Please enter a letter: ")
+		 */
+		System.out.println("Please enter a letter: ");
 		letter = input.next().charAt(0);
 		if (!Character.isLetter(letter)) {
 			println("Please enter only a letter");
