@@ -133,11 +133,11 @@ public class Hangman extends ConsoleProgram {
 			}
 		}
 	}
-	
+	/*
 	private boolean hasLetterBeenGuessed(char upperLetter) {
 		
 	}
-	
+	*/
 	
 	/**
 	 * Method: Get Random Word
