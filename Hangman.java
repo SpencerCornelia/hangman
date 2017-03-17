@@ -106,6 +106,7 @@ public class Hangman extends ConsoleProgram {
 		String letter = readLine("Please enter a letter: ");
 		if (letter.length() > 1) {
 			println("Please only input one letter");
+			
 		} else if (!letter.chars().allMatch(Character::isLetter)) {
 			println("Please only input letters");
 		} else {
