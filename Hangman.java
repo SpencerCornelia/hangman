@@ -109,7 +109,8 @@ public class Hangman extends ConsoleProgram {
 		if (letter.length() > 1) {
 			println("Please only input one letter");
 		}
-		// need to convert letter to upper case
+		char letterToChar = letter.charAt(0);
+		upperLetter = Character.toUpperCase(letterToChar);
 		checkLetter(upperLetter);
 		numberOfGuesses ++;
 		return upperLetter;
