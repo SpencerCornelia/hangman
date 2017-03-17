@@ -154,7 +154,7 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void hasUserWon() {
-		
+		// if currentWord == theWord, set userWins = to 1
 	}
 	
 	/*
