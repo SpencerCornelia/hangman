@@ -83,7 +83,7 @@ public class Hangman extends ConsoleProgram {
 	private void playGame(String word) {
 		println("Welcome to Hangman");
 		while (guessesRemaining > 0) {
-			currentWord = createWord(theWord, upperLetter);
+			currentWord = createWord(theWord);
 			println("Your word now looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
 			// getLetterFromUser();
@@ -96,7 +96,7 @@ public class Hangman extends ConsoleProgram {
 		}
 	}
 	
-	private String createWord(String theWord, char upperLetter) {
+	private String createWord(String theWord) {
 		// need to run for loop for length of theWord
 		for (int i = 0; i <= theWord.length(); i++) {
 			if (theWord.charAt(i) == upperLetter) {
