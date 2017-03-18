@@ -82,7 +82,6 @@ public class Hangman extends ConsoleProgram {
 		drawBackground();
 		addKarel();
 		addParachute();
-		addWordToCanvas();
 	}
 	
 	private void drawBackground() {
