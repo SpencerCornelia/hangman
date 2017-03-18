@@ -77,6 +77,10 @@ public class Hangman extends ConsoleProgram {
 		playGame(theWord);
 	}
 	
+	public void init() {
+		add(canvas);
+	}
+	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
 		while (guessesRemaining > 0) {
