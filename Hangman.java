@@ -92,7 +92,7 @@ public class Hangman extends ConsoleProgram {
 	private void addKarel() {
 		GImage karel = new GImage("karel.png");
 		karel.setSize(150, 150);
-		canvas.add(karel, 120, 150);
+		canvas.add(karel, 120, 170);
 	}
 	
 	private void playGame(String word) {
