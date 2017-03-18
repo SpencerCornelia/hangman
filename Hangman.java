@@ -56,6 +56,8 @@ public class Hangman extends ConsoleProgram {
 	/* set to 1 when user wins to break out of while loop */
 	private int userWins = 0;
 	
+	private int guess = 0;
+	
 	
 	/***********************************************************
 	 *              Instance Variables                         *
@@ -149,7 +151,6 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void checkLetter(char upperLetter) {
-		int guess = 0;
 		for (int i = 0; i < theWord.length(); i++) {
 			if (upperLetter == theWord.charAt(i)) {
 				correctGuesses += upperLetter;
