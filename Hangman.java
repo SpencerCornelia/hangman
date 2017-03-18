@@ -148,7 +148,9 @@ public class Hangman extends ConsoleProgram {
 	
 	private void hasUserWon() {
 		// if currentWord == theWord, set userWins = to 1
-		Objects.equals(theWord, currentWord);
+		if (Objects.equals(theWord, currentWord)) {
+			userWins = 1;
+		}
 	}
 	
 	
