@@ -111,7 +111,7 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void addIncorrectGuesses(String incorrectGuesses) {
-		GLabel incorrectGuessesOnCanvas = new GLabel(incorrectGuesses, 70, INCORRECT_GUESSES_Y);
+		GLabel incorrectGuessesOnCanvas = new GLabel("Incorrect Guesses: " + incorrectGuesses, 70, INCORRECT_GUESSES_Y);
 		incorrectGuessesOnCanvas.setFont(INCORRECT_GUESSES_FONT);
 		canvas.add(incorrectGuessesOnCanvas);
 	}
