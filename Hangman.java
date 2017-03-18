@@ -58,8 +58,6 @@ public class Hangman extends ConsoleProgram {
 	private char letter;
 	/* use this to convert user input char to upper case */
 	private char upperLetter;
-	/* keep a counter to help with checking if user has previously guessed letter */
-	private int numberOfGuesses = 0;
 	/* set to 1 when user wins to break out of while loop */
 	private int userWins = 0;
 	
@@ -158,11 +156,6 @@ public class Hangman extends ConsoleProgram {
 		// check if two strings are equal -- google this
 	}
 	
-	/*
-	private boolean hasLetterBeenGuessed(char upperLetter) {
-		
-	}
-	*/
 	
 	/**
 	 * Method: Get Random Word
