@@ -82,6 +82,7 @@ public class Hangman extends ConsoleProgram {
 		drawBackground();
 		addKarel();
 		addParachute();
+		addWordToCanvas();
 	}
 	
 	private void drawBackground() {
@@ -100,6 +101,10 @@ public class Hangman extends ConsoleProgram {
 		GImage parachute = new GImage("parachute.png");
 		parachute.setSize(PARACHUTE_WIDTH, PARACHUTE_HEIGHT);
 		canvas.add(parachute, 50, PARACHUTE_Y);
+	}
+	
+	private void addWordToCanvas() {
+		GLabel wordToCanvas = new GLabel(currentWord);
 	}
 	
 	private void playGame(String word) {
