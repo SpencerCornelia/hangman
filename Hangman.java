@@ -78,8 +78,8 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	public void init() {
-		drawBackground();
 		add(canvas);
+		drawBackground();
 	}
 	
 	private void drawBackground() {
