@@ -78,8 +78,15 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	public void init() {
+		drawBackground();
 		add(canvas);
 	}
+	
+	private void drawBackground() {
+		 GImage bg = new GImage("background.jpg");
+		 bg.setSize(canvas.getWidth(), canvas.getHeight());
+		 canvas.add(bg, 0, 0);
+		}
 	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
