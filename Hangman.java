@@ -167,6 +167,7 @@ public class Hangman extends ConsoleProgram {
 			} 
 			if (theWord.indexOf(upperLetter) == -1) {
 				incorrectGuesses += upperLetter;
+				addIncorrectGuesses(incorrectGuesses);
 				guess = 0;
 			}
 		}
