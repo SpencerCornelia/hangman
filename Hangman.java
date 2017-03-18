@@ -99,7 +99,7 @@ public class Hangman extends ConsoleProgram {
 	private void addParachute() {
 		GImage parachute = new GImage("parachute.png");
 		parachute.setSize(PARACHUTE_WIDTH, PARACHUTE_HEIGHT);
-		canvas.add(parachute, canvas.getWidth() / 2, PARACHUTE_Y);
+		canvas.add(parachute, 100, PARACHUTE_Y);
 	}
 	
 	private void playGame(String word) {
