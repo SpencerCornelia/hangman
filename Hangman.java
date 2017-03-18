@@ -13,6 +13,7 @@ import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Hangman extends ConsoleProgram {
@@ -147,7 +148,7 @@ public class Hangman extends ConsoleProgram {
 	
 	private void hasUserWon() {
 		// if currentWord == theWord, set userWins = to 1
-		// check if two strings are equal -- google this
+		Objects.equals(theWord, currentWord);
 	}
 	
 	
