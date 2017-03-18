@@ -110,6 +110,12 @@ public class Hangman extends ConsoleProgram {
 		canvas.add(wordToCanvas);
 	}
 	
+	private void addIncorrectGuesses(String incorrectGuesses) {
+		GLabel incorrectGuessesOnCanvas = new GLabel(incorrectGuesses, 70, INCORRECT_GUESSES_Y);
+		incorrectGuessesOnCanvas.setFont(INCORRECT_GUESSES_FONT);
+		canvas.add(incorrectGuessesOnCanvas);
+	}
+	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
 		while (guessesRemaining > 0) {
