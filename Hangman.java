@@ -166,14 +166,14 @@ public class Hangman extends ConsoleProgram {
 				guess = 1;
 			} 
 			if (theWord.indexOf(upperLetter) == -1) {
-				incorrectGuesses += upperLetter;
-				addIncorrectGuesses(incorrectGuesses);
 				guess = 0;
 			}
 		}
 
 		if (guess == 0) {
 			howManyGuesses(false, upperLetter);
+			incorrectGuesses += upperLetter;
+			addIncorrectGuesses(incorrectGuesses);
 		}
 		
 		if (guess == 1) {
