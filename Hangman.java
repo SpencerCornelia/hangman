@@ -91,7 +91,7 @@ public class Hangman extends ConsoleProgram {
 	
 	private void addKarel() {
 		GImage karel = new GImage("karel.png");
-		karel.setSize(50, 50);
+		karel.setSize(100, 100);
 		canvas.add(karel, canvas.getWidth() / 2, canvas.getHeight() - 150);
 	}
 	
