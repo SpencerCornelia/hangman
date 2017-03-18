@@ -84,6 +84,7 @@ public class Hangman extends ConsoleProgram {
 		drawBackground();
 		addKarel();
 		addParachute();
+		addWordToCanvas(currentWord);
 	}
 	
 	private void drawBackground() {
@@ -110,12 +111,15 @@ public class Hangman extends ConsoleProgram {
 		canvas.add(wordToCanvas);
 	}
 	
+	private void updateCanvasWord(String currentWord) {
+		
+	}
+	
 	private void playGame(String word) {
 		println("Welcome to Hangman");
 		while (guessesRemaining > 0) {
 			println("Your word looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
-			addWordToCanvas(currentWord);
 			getLetterFromUser();
 			if (userWins == 1) {
 				//userWon();
