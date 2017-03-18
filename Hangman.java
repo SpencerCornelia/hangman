@@ -103,7 +103,7 @@ public class Hangman extends ConsoleProgram {
 		canvas.add(parachute, 50, PARACHUTE_Y);
 	}
 	
-	private void addWordToCanvas() {
+	private void addWordToCanvas(String currentWord) {
 		GLabel wordToCanvas = new GLabel(currentWord);
 	}
 	
@@ -112,6 +112,7 @@ public class Hangman extends ConsoleProgram {
 		while (guessesRemaining > 0) {
 			println("Your word looks like this: " + currentWord);
 			println("You now have " + guessesRemaining + " guesses left");
+			addWordToCanvas(currentWord);
 			getLetterFromUser();
 			if (userWins == 1) {
 				//userWon();
