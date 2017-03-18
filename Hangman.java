@@ -91,6 +91,10 @@ public class Hangman extends ConsoleProgram {
 				break;
 			}
 		}
+		
+		if (guessesRemaining == 0) {
+			println("Sorry, you lost. The word is: " + theWord);
+		}
 	}
 	
 	private String createWord(String theWord) {
