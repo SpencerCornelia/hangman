@@ -88,6 +88,7 @@ public class Hangman extends ConsoleProgram {
 			getLetterFromUser();
 			if (userWins == 1) {
 				//userWon();
+				println("made it here");
 				break;
 			}
 		}
