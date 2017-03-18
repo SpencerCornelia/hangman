@@ -55,7 +55,7 @@ public class Hangman extends ConsoleProgram {
 	private char upperLetter;
 	/* set to 1 when user wins to break out of while loop */
 	private int userWins = 0;
-	
+	/* used for checking how many guesses and if user has won */
 	private int guess = 0;
 	
 	
@@ -105,9 +105,11 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void addWordToCanvas(String currentWord) {	
-		GLabel wordToCanvas = new GLabel(currentWord, 50, PARTIALLY_GUESSED_Y);
-		wordToCanvas.setFont(PARTIALLY_GUESSED_FONT);
-		canvas.add(wordToCanvas);
+		if (guess == 0) {
+			GLabel wordToCanvas = new GLabel(currentWord, 50, PARTIALLY_GUESSED_Y);
+			wordToCanvas.setFont(PARTIALLY_GUESSED_FONT);
+			canvas.add(wordToCanvas);
+		}
 	}
 	
 	private void playGame(String word) {
