@@ -108,7 +108,7 @@ public class Hangman extends ConsoleProgram {
 			wordToCanvas.setFont(PARTIALLY_GUESSED_FONT);
 			canvas.add(wordToCanvas);
 		}
-		setLabel(currentWord);
+		wordToCanvas.setLabel(currentWord);
 	}
 	
 	private void playGame(String word) {
