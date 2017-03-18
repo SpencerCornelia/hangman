@@ -103,7 +103,7 @@ public class Hangman extends ConsoleProgram {
 	}
 	
 	private void addWordToCanvas(String currentWord) {
-		GLabel wordToCanvas = new GLabel(currentWord, 50, 50);
+		GLabel wordToCanvas = new GLabel(currentWord, 50, PARTIALLY_GUESSED_Y);
 		wordToCanvas.setFont(PARTIALLY_GUESSED_FONT);
 		canvas.add(wordToCanvas);
 	}
