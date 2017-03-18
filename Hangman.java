@@ -54,8 +54,6 @@ public class Hangman extends ConsoleProgram {
 	private String updatedWord;
 	/* will help with counter to determine how many guesses user has left */
 	private int guessesRemaining = N_GUESSES;
-	/* letter that user inputs into console */
-	//private char letter;
 	/* use this to convert user input char to upper case */
 	private char upperLetter;
 	/* set to 1 when user wins to break out of while loop */
