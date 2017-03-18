@@ -39,7 +39,7 @@ public class Hangman extends ConsoleProgram {
 	private static final int INCORRECT_GUESSES_Y = 460;
 	/* The fonts of both labels */
 	private static final String PARTIALLY_GUESSED_FONT = "Courier-36";
-	private static final String INCORRECT_GUESSES_FONT = "Courier-26";
+	private static final String INCORRECT_GUESSES_FONT = "Courier-16";
 	
 	/* The word returned from getRandomWord which will serve as main word in game */
 	private String theWord;
